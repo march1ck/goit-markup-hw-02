@@ -6,12 +6,12 @@
   --studio-color-text: #000000;
   --secondary-back-color: #2f303a;
   --team-btn-back-color: #f5f4fa;
+  --hidden-btn-hero-color: #188ce8;
 }
 body {
   background-color: #ffffff;
   color: var(--primary-color-text);
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
   letter-spacing: 0.03em;
 }
 .list {
@@ -43,6 +43,7 @@ body {
 /* Header navigation */
 .page-nav .menu-link {
   color: var(--secondary-color-text);
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -54,7 +55,7 @@ body {
 
 .auth-nav-link {
   color: var(--primary-color-text);
-
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -94,6 +95,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 }
+.hero .btn:hover,
+.hero .btn:focus {
+  background: var(--hidden-btn-hero-color);
+}
 /* /Hero */
 
 /* Benefits */
@@ -116,19 +121,15 @@ body {
   text-transform: uppercase;
 }
 .benefits-section .benefits-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
 /* /Benefits */
 
 /* Works */
-.works-section .works-title,
-.team-section .team-title {
+.title
+ {
   color: var(--secondary-color-text);
-}
-.works-title,
-.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -151,7 +152,6 @@ body {
   text-align: center;
 }
 .team-section .position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -168,15 +168,12 @@ body {
 .location {
   color: var(--hero-logo-text);
   font-style: normal;
-
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
 .contacts {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -187,19 +184,22 @@ body {
 .portfolio-btn {
   color: var(--secondary-color-text);
   background: var(--team-btn-back-color);
+  font-family: inherit;
+  font-weight: 500;
   border: none;
   cursor: pointer;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  letter-spacing: 0.03em;
 }
+.portfolio-btn:active,
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--accent-color);
+   color: var(--hero-logo-text);
 }
-.portfolio-btn:active {
-  color: var(--hero-logo-text);
-}
+
 
 .section-icon .icon-title {
   color: var(--secondary-color-text);
@@ -210,7 +210,6 @@ body {
 }
 .section-icon > .icon-text {
   color: var(--primary-color-text);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
 }
