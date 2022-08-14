@@ -7,7 +7,7 @@
   --secondary-back-color: #2f303a;
   --team-btn-back-color: #f5f4fa;
 }
-.page {
+body {
   background-color: #ffffff;
   color: var(--primary-color-text);
   font-family: "Roboto", sans-serif;
@@ -55,7 +55,6 @@
 .auth-nav-link {
   color: var(--primary-color-text);
 
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -70,6 +69,8 @@
 /* Hero */
 .hero {
   background-color: var(--secondary-back-color);
+}
+.hero .hero-text {
   color: var(--hero-logo-text);
   font-weight: 900;
   font-size: 44px;
@@ -84,7 +85,14 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 /* /Hero */
 
@@ -103,12 +111,28 @@
 }
 .benefits-section .benefits-title {
   color: var(--secondary-color-text);
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.benefits-section .benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 /* /Benefits */
 
 /* Works */
-.works-section .works-title {
+.works-section .works-title,
+.team-section .team-title {
   color: var(--secondary-color-text);
+}
+.works-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 /* /Works */
 
@@ -119,8 +143,18 @@
 .team-section .worker {
   background-color: var(--team-btn-back-color);
 }
-.team-section .team-title {
+.team-section .names {
   color: var(--secondary-color-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.team-section .position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
 }
 /* /Team */
 
@@ -133,9 +167,18 @@
 }
 .location {
   color: var(--hero-logo-text);
+  font-style: normal;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 .contacts {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 /* /Basement */
 
@@ -146,15 +189,28 @@
   background: var(--team-btn-back-color);
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--accent-color);
 }
+.portfolio-btn:active {
+  color: var(--hero-logo-text);
+}
 
-.section-icon {
+.section-icon .icon-title {
   color: var(--secondary-color-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .section-icon > .icon-text {
   color: var(--primary-color-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
 }
